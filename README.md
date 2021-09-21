@@ -51,4 +51,4 @@ Muestra de componentes de bootstrap y desarrollo de web sencilla.
 <!-- CONTACT -->
 ## Contact
 
-Oscar Daniel Hernandez Moreno - [@your_twitter](https://twitter.com/ODanielHM) - danihm95@gmail.com
+Oscar Daniel Hernandez Moreno - [@ODanielHM](https://twitter.com/ODanielHM) - danihm95@gmail.com
