@@ -2,17 +2,14 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">Saludos, Clase de Desarrollo de dispositivos moviles</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    Les comparto el código que hemos desarrollado en clase así como algunas fuentes que hemos revisado a lo largo de la clase
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
     <br />
+    <a href="https://getbootstrap.com"><strong>Bootstrap</strong></a>
     <br />
     <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
     ·
