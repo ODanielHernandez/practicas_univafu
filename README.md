@@ -47,7 +47,6 @@ Muestra de componentes de bootstrap y desarrollo de web sencilla.
 
 
 
-
 <!-- CONTACT -->
 ## Contact
 
