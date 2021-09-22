@@ -8,99 +8,62 @@
 
 
      <!-- Bootstrap core CSS -->
-     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
      <link rel="stylesheet" href="styles.css">
 
      <title>Bootstrap</title>
 </head>
 
 <body>
-     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-          <div class="container-fluid">
-               <a class="navbar-brand" href="#">
-                    <img src="assets/icon.png" alt="" height="35">
-               </a>
+     <img src="./assets/icon.png" class="position-logo" alt="" srcset="">
 
-               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-               </button>
+     <div class="container-fluid img-background d-flex align-items-center justify-content-start">
+          <div class="container-content w-25 ms-5">
+               <h2 class="custom-text-pos">VISTE A LA MODA</h2>
+               <h1>THE YEAR IN FASHION</h1>
 
-               <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                         <li class="nav-item">
-                              <a class="nav-link active" aria-current="page" href="#">Home</a>
-                         </li>
-                         <li class="nav-item">
-                              <a class="nav-link" href="#">Features</a>
-                         </li>
-                         <li class="nav-item">
-                              <a class="nav-link" href="#">Pricing</a>
-                         </li>
-                         <li class="nav-item">
-                              <a class="nav-link disabled">Disabled</a>
-                         </li>
-                         <li class="nav-item dropdown">
-                              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                   data-bs-toggle="dropdown" aria-expanded="false">
-                                   Dropdown link
-                              </a>
-                              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                   <li><a class="dropdown-item" href="#">Action</a></li>
-                                   <li><a class="dropdown-item" href="#">Another action</a></li>
-                                   <li><a class="dropdown-item" href="#">Something else here</a></li>
-                              </ul>
-                         </li>
-                    </ul>
+               <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum dolorem, beatae voluptatibus
+                    voluptates eius odit corrupti praesentium molestias eos distinctio ipsa cum nulla consequuntur illum
+                    nam aliquam incidunt atque dicta?</small>
+               <div class="mt-5">
+                    <div class="btn btn-outline-light btn-lg" onclick="move('info')">Saber más</div>
                </div>
           </div>
-     </nav>
-     <div class="container-fluid img-background text-center d-flex justify-content-center align-items-center">
-          <h1>THE YEAR IN FASHION</h1>
      </div>
-     <div class="container mb-5">
+
+     <div class="container mb-5" id="info">
           <div class="d-flex my-3 justify-content-end">
                <div class="btn-group" role="group" aria-label="Basic example">
-                    <button type="button" class="btn btn-primary">Left</button>
-                    <button type="button" class="btn btn-primary">Middle</button>
-                    <button type="button" class="btn btn-primary">Right</button>
-                  </div>
+                    <button type="button" class="btn btn-outline-primary">Superior</button>
+                    <button type="button" class="btn btn-outline-primary">Inferior</button>
+                    <button type="button" class="btn btn-outline-primary">Calzado</button>
+               </div>
           </div>
 
           <div class="row">
                <div class="col-md-4 col-sm-12">
                     <div class="card w-100">
-                         <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                              <p class="card-text">Some quick example text to build on the card title and make up the
-                                   bulk of the card's content.</p>
-                              <a href="#" class="card-link">Card link</a>
-                              <a href="#" class="card-link">Another link</a>
+                         <img class="card-img-top" src="./assets/home/1.jpg">
+                         <img src="./assets/home/1_tank.png" class="center-img" alt="">
+                         <div class="card-body text-center">
+                              <h5 class="card-title">Acertive</h5>
+                              <h6 class="card-subtitle mb-2 text-muted">Tank top</h6>
+                              <p class="card-text">Colores vibrantes y poderosos.</p>
+                              <a href="#" class="card-link">Comprar</a>
+                              <a href="#" class="card-link">Ver más</a>
                          </div>
                     </div>
                </div>
                <div class="col-md-4 col-sm-12">
                     <div class="card w-100">
-                         <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                              <p class="card-text">Some quick example text to build on the card title and make up the
-                                   bulk of the card's content.</p>
-                              <a href="#" class="card-link">Card link</a>
-                              <a href="#" class="card-link">Another link</a>
-                         </div>
-                    </div>
-               </div>
-               <div class="col-md-4 col-sm-12">
-                    <div class="card w-100">
-                         <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                              <p class="card-text">Some quick example text to build on the card title and make up the
-                                   bulk of the card's content.</p>
-                              <a href="#" class="card-link">Card link</a>
-                              <a href="#" class="card-link">Another link</a>
+                         <img class="card-img-top" src="./assets/home/2.jpg">
+                         <img src="./assets/home/2_polo.png" class="center-img" alt="">
+                         <div class="card-body text-center">
+                              <h5 class="card-title">Acertive</h5>
+                              <h6 class="card-subtitle mb-2 text-muted">Tank top</h6>
+                              <p class="card-text">Colores vibrantes y poderosos.</p>
+                              <a href="#" class="card-link">Comprar</a>
+                              <a href="#" class="card-link">Ver más</a>
                          </div>
                     </div>
                </div>

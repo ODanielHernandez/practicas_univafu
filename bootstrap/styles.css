@@ -1,5 +1,4 @@
 body {
-     color: white;
      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -8,31 +7,34 @@ body {
      background-position: center;
      background-size: cover;
      background-repeat: no-repeat;
-     height: 94vh;
+     height: 100vh;
+
+     color: white;
+}
+
+.position-logo {
+     position: absolute;
+     left: 3rem;
+     margin-top: 20px;
+
 }
 
 h1 {
      font-size: 100px;
 }
 
-.card {
-     color: black;
-}
-
-.custom-text-pos {
-     bottom: -48px;
-     position: relative;
+.btn {
+     border-radius: 30px;
 }
 
 .center-img {
-     width: 100px;
+     width: 120px;
      position: absolute;
      top: 50px;
      left: 36%;
 }
 
 @media (max-width: 765px) { 
-
      .card {
           margin-bottom: 10px;
      }
