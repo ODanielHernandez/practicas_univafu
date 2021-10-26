@@ -48,21 +48,57 @@
     </ion-item-sliding>
   </ion-list>
 
-  <ion-card>
-    <img src="assets/home/dog.jpg" />
+  <ion-card *ngFor="let card of cardsArray">
+    <img [src]="card.image"/>
     <ion-card-header>
-      <ion-card-subtitle>Clase 1</ion-card-subtitle>
-      <ion-card-title>Ejemplo de Javascript</ion-card-title>
+      <ion-card-subtitle>{{card.subTitle}}</ion-card-subtitle>
+      <ion-card-title>{{card.title}}</ion-card-title>
     </ion-card-header>
     <ion-card-content>
-      <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci placeat earum molestiae! Officiis eum deserunt in error molestias facilis labore repellat, provident corporis nostrum laudantium corrupti rem, laboriosam doloremque sapiente..</small>
+      <small>{{card.description}}</small>
+      
+    <ion-chip *ngFor="let people of arrayRandomPeople">
+      <ion-avatar>
+        <img [src]="people">
+      </ion-avatar>
+      <ion-label>Avatar Chip</ion-label>
+      <ion-badge class="ion-margin-start" color="danger">{{randomNumber()}}</ion-badge>
+    </ion-chip>
     </ion-card-content>
 
     <ion-item>
       <ion-icon name="book" slot="start"></ion-icon>
-      <ion-label>Revisar clase</ion-label>
-      <ion-button fill="outline" slot="end">confirmar</ion-button>
+      <ion-label>{{card.label}}</ion-label>
+      <ion-button *ngIf="card.type === 0" fill="outline" slot="end">confirmar</ion-button>
+      <ion-icon *ngIf="card.type === 1" slot="end" color="success" name="checkmark-circle"></ion-icon>
     </ion-item>
   </ion-card>
+
+  <div class="center">
+    <h4>Titulo</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa libero provident tempora numquam. Iusto tempore rem veniam vitae ad magnam nihil nam maxime tempora quis voluptatum unde, laboriosam fuga itaque?</p>
+    <ion-chip outline="true" color="dark">
+      <ion-label>Secondary Label</ion-label>
+    </ion-chip>
+    <ion-chip outline="true" color="dark">
+      <ion-label>Secondary Label</ion-label>
+      <ion-icon name="trash"></ion-icon>
+    </ion-chip>
+  </div>
+
+  <ion-fab vertical="center" horizontal="end" slot="fixed">
+    <ion-fab-button color="primary">
+      <ion-icon name="share"></ion-icon>
+    </ion-fab-button>
+
+    <ion-fab-list side="top">
+      <ion-fab-button color="danger"><ion-icon name="cog"></ion-icon></ion-fab-button>
+      <ion-fab-button><ion-icon name="logo-vimeo"></ion-icon></ion-fab-button>
+    </ion-fab-list>
+    <ion-fab-list side="bottom">
+      <ion-fab-button color="warning"><ion-icon name="logo-twitter"></ion-icon></ion-fab-button>
+      <ion-fab-button><ion-icon name="logo-facebook"></ion-icon></ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
 
 </ion-content>

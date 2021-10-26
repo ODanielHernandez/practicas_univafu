@@ -15,9 +15,35 @@ export class HomePage implements OnInit {
     {name: 'Clase 4', icon: 'aperture-outline'},
   ];
 
+  cardsArray = [
+    {
+      image: 'assets/home/dog.jpg',
+      subTitle: 'Clase 1',
+      title: 'Ejemplo de Javascript',
+      description: 'Lorem ipsum dolor, laboriosam doloremque sapiente.',
+      label: 'Revisar clase',
+      type: 0
+    },
+    {
+      image: 'assets/home/italy.jpg',
+      subTitle: 'Clase 2',
+      title: 'Ejemplo de Ionic',
+      description: 'Lorem ipsum dolor, laboriosam doloremque sapiente.',
+      label: 'Ejercicio de tarea',
+      type: 1
+    }
+  ];
+
+  // eslint-disable-next-line max-len
+  arrayRandomPeople = ['https://picsum.photos/200/300?random=1', 'https://picsum.photos/200/300?random=2', 'https://picsum.photos/200/300?random=3', 'https://picsum.photos/200/300?random=$4'];
+
   constructor(public alertController: AlertController, public toastController: ToastController) { }
 
   ngOnInit() {
+  }
+
+  randomNumber() {
+    return Math.round(Math.random() * (5 - 1) + 1);
   }
 
   async presentAlert() {
